@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="课表提醒图标">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fa2ff"/>
+      <stop offset="1" stop-color="#c0aaff"/>
+    </linearGradient>
+  </defs>
+  <!-- 圆角方形底 -->
+  <rect x="0" y="0" width="512" height="512" rx="115" fill="url(#bg)"/>
+
+  <!-- 顶部挂环 -->
+  <rect x="128" y="99" width="57" height="60" rx="27" fill="#6f80f0"/>
+  <rect x="298" y="99" width="57" height="60" rx="27" fill="#6f80f0"/>
+
+  <!-- 日历卡片 -->
+  <rect x="105" y="138" width="302" height="283" rx="58" fill="#ffffff"/>
+  <!-- 顶部色条：用 clipPath 让两端跟随卡片圆角 -->
+  <clipPath id="cardClip">
+    <rect x="105" y="138" width="302" height="283" rx="58"/>
+  </clipPath>
+  <g clip-path="url(#cardClip)">
+    <rect x="105" y="138" width="302" height="80" fill="#6f80f0"/>
+  </g>
+
+  <!-- 课表格子，两个高亮 -->
+  <g fill="#ccd6fd">
+    <rect x="164" y="252" width="45" height="34" rx="12"/>
+    <rect x="240" y="252" width="45" height="34" rx="12"/>
+    <rect x="316" y="252" width="45" height="34" rx="12"/>
+    <rect x="240" y="308" width="45" height="34" rx="12"/>
+    <rect x="316" y="308" width="45" height="34" rx="12"/>
+    <rect x="164" y="364" width="45" height="34" rx="12"/>
+    <rect x="240" y="364" width="45" height="34" rx="12"/>
+  </g>
+  <g fill="#7c8cf8">
+    <rect x="164" y="308" width="45" height="34" rx="12"/>
+    <rect x="316" y="364" width="45" height="34" rx="12"/>
+  </g>
+</svg>
